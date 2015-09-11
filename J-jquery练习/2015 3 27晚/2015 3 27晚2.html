@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+        $("#button1").click(function() {
+			$(".box").css("background-color","blue").css("left","200px");
+		});
+    });
+</script>
+<style type="text/css">
+	div.box
+	{
+		width:100px;
+		height:100px;
+		background-color:#093;
+		border:1px solid #999;
+		position:relative;
+	}
+</style>
+</head>
+<body>
+<button id="button1">jq channing</button>
+<div class="box"></div>
+</body>
+</html>

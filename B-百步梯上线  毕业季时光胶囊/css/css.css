@@ -1,0 +1,160 @@
+html,body
+{
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family:"Microsoft Yahei";
+}
+.imgleft
+{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:-5;
+
+}
+.imgright
+{
+
+	position: absolute;
+	right:0;
+	bottom:0;
+	z-index:-5;
+
+}
+
+.container
+{
+	position:relative;
+	width:90%;
+	height:100%;
+	margin:auto;
+	margin-top:5%;
+	
+	
+}
+.form
+{
+	height:90%;
+}
+form
+{
+	height:75%;
+}
+input
+{
+
+	text-indent:0.6em;
+    color:rgba(0, 0, 0, 0.76);
+
+
+}
+textarea
+{
+	margin-top:5%;
+	margin-bottom:5%;
+	height:60%;;
+	text-indent:0.6em;
+    color:rgba(0, 0, 0, 0.76);
+
+}
+.receive
+{
+	width:100%;
+	font-size:1.2em;
+	color:rgba(0, 0, 0, 0.76);
+	background-color: transparent;
+	border:none;
+	border-bottom:2px solid rgba(0, 0, 0, 0.26);
+	font-family:"Microsoft Yahei";
+}
+-webkit-input-placeholder 
+{
+	text-indent:0.6em;
+	font-size:2em
+	font-family:"Microsoft Yahei";
+    color:rgba(0, 0, 0, 0.26);
+}
+-moz-input-placeholder
+{
+	text-indent:0.6em;
+	font-size:2em;
+    color:rgba(0, 0, 0, 0.26);
+}
+.connect
+{
+	margin-bottom:2em;;
+	width:100%;
+	height:2.5em;
+	font-size:1.2em;
+	color:rgba(0, 0, 0, 0.76);
+	background-color: rgba(103,210,224,0.62);
+	border:none;
+	font-family:"Microsoft Yahei";
+}
+
+.tabs
+{
+	float:left;
+	width:25%;
+	font-size:1em;
+	line-height:2.5em;
+	height:100%;
+	margin-right:5%;
+	display:block;
+	position:relative;
+	text-align:center;
+	width:20%;
+	background-color: rgba(103,210,224,0.62);
+	color:rgba(0,0,0,0.56);
+}
+.tabs.halfYear
+{
+		background-color:  rgba(74,152,175,0.62);
+
+}
+.tabs.oneYear
+{
+		background-color:  rgba(74,152,175,0.62);
+
+}
+.hide
+{
+	display:none;
+}
+.button
+{
+	position:absolute;
+	right:0;
+	width:40%;
+	height:2.5em;
+	border:none;
+	background-color: transparent;
+}
+.btnimg
+{
+	float:left;
+	margin-left:1em;
+	width:2.5em;
+	height:2.5em;
+}
+.btn
+{
+	position:relative;
+	float:left;
+	margin-left:0.5em;
+	font-size:1.5em;
+	font-family:"Microsoft Yahei";
+	color:rgba(28,80,120,0.76);
+}
+.finnal
+{
+	position:absolute;
+	right:0;
+
+}
+.footer
+{
+	color:rgba(0,0,0,0.46);
+	text-align:center;
+}

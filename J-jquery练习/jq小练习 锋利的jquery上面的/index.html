@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
+</head>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("div:odd").css({
+			"color":"red",
+		})
+		$("li:eq(3)").css({
+			"color":"red",
+		})
+		$("li:contains(3)").css({
+			"color":"red",
+		})
+		var $two=$('li:eq(2)');
+		$two.css({
+			"color":"green",
+		})
+	
+
+	})
+	$(document).ready(function(){
+		var $li=("ul li:eq(1)");
+		var li_txt=$li.text();
+		alert(li_txt);
+	})
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").toggleClass("another");
+		})
+	})
+	$(document).ready(function(){
+		$("div").closest("li").css("color","blue");
+	})
+</script>
+<style>
+.another{
+	background-color:blue;
+}
+.p{
+	color:red;
+}
+</style>
+<body>
+	<div>
+		<p class="p">点我</p>
+        <button>点我</button>
+	</div>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+	<div>
+<div id="li">
+	1
+</div>
+<div>
+	2
+</div>
+<div>
+	3
+</div>
+<div>
+	4
+</div>
+</div>
+</body>
+</html>

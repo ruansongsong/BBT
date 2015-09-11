@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<title>毕业季</title>
+<link rel="stylesheet" href="css/css.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/js.js"></script>
+
+  <script type="text/javascript">
+  
+  </script>
+<script type="text/javascript">
+  function validate()
+  {
+	resetFields()
+	var isTrue=1;
+    var name=document.getElementById('name').value;
+
+	var qq=document.getElementById('qq').value;
+	var Vqq=/^\d{5,10}$/;
+	var tel=document.getElementById('tel').value;
+	var Vtel=/^1[3|4|5|8][0-9]\d{4,8}$/;
+	var text=document.getElementById('text').value;
+	
+	   if(name=="")
+		{
+		  $("#name").addClass("required");
+
+        	isTrue=0;
+		}
+		if((qq=="")||(!Vqq.test(qq)))
+		{
+			$("#qq").addClass("requiredbox");
+
+			isTrue=0;
+		}
+		if((tel=="")||(!Vtel.test(tel)))
+		{
+			$("#tel").addClass("requiredbox");
+	
+			isTrue=0;
+		}
+		if(text=="")
+		{
+			$("#text").addClass("required");
+	
+			isTrue=0;
+		}
+		if(isTrue==0)
+		{
+			return false;
+		}
+         function resetFields() {
+            $("#name,#qq,#tel,#college,#text").removeClass("required");
+        }
+  };
+
+
+</script>
+<style type="text/css">
+.required 
+{
+	border-bottom:1px solid #F00;
+}
+.requiredbox
+{
+	border:1px solid #F00;
+}
+</style>
+</head>
+<body>
+<div class="imgleft">
+<img src="images/left.png" />
+</div>
+<div class="container">
+<div class="form">
+  <form action="aa.php" onSubmit="return validate();" id="form" method="post">
+
+        
+        <!--your name start-->
+        
+		
+    <input type="text" class="receive" name="name" id="name" placeholder="收信人"/>
+
+        
+        <!--your name end--> 
+      
+      
+          <!--your Mail start-->
+   
+   
+    <textarea id="text" class="receive" name="text" placeholder="请填写寄给未来的话语"></textarea>
+
+
+    
+    <!--your Mail end-->
+      
+        <!--your QQ start-->
+
+
+    <input type="text" class="connect" name="qq" id="qq" placeholder="收件人QQ" />
+
+
+        
+        <!--your QQ end--> 
+        
+        <!--your TEL start-->
+        
+        
+    <input type="text" name="tel" class="connect" id="tel" placeholder="收件人手机" />
+
+
+        
+        <!--your TEL end--> 
+        
+      
+      
+    
+    <!--time start-->
+    <div class="time">
+   <label class="tabs halfYear" for="halfYear" id="tabHalfYear">半年</label>
+   <label class="tabs" for="oneYear" id="tabOneYear">一年</label>
+   
+   
+   <input type="radio" name="time" checked="checked" value="半年" id="halfYear" class="hide" />
+   <input type="radio" name="time" value="一年" id="oneYear" class="hide" />
+   		
+      
+
+      <button type="submit" class="button"> 
+      
+      	
+      	 <img class="btnimg" src="images/btn.png" />
+         <div class="btn">
+      	 投递
+         </div>   
+    </button>
+
+  
+   
+</div>
+      
+
+
+    
+    <!--time end-->
+    
+
+  </form>
+  
+</div>
+
+</div>
+    <div class="footer">
+    <footer> &copy;2015 BBT Tech </footer>
+	</div>
+<div class="finnal">
+
+<img class="imgright" src="images/right.png" />
+</div>
+  <script type="text/javascript">
+  	setTimeAttr();
+  </script>
+
+</body>
+</html>

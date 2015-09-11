@@ -1,0 +1,64 @@
+<!--
+缩写搜索元素的范围
+
+三个最基本的过滤方法是：first(), last() 和 eq()，它们允许您基于其在一组元素中的位置来选择一个特定的元素。
+
+其他过滤方法，比如 filter() 和 not() 允许您选取匹配或不匹配某项指定标准的元素。
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+        $("#btn1").click(function(){
+			$("#div1 p").first().css("color","red");
+		});
+		$("#btn2").click(function(){
+			$("#div1 p").last().addClass("a");
+		});
+		$("#btn3").click(function() {
+			$("p").eq(2).addClass("a");
+		});
+		$("#btn4").click(function() {
+			$("p").filter(".intro").addClass("a");
+		});
+		$("#btn5").click(function() {
+			$("p").not(".intro").addClass("a");
+			});
+    });
+</script>
+<style type="text/css">
+	.a
+	{
+		font-size::30px;
+		border:1px solid #999;
+		color:#060;
+	}
+	
+</style>
+</head>
+
+<body>
+<div id="div1">
+<p>www</p>
+<p>ffffff</p>
+<p>www(index 2)</p>
+<p>ffffff</p>
+<p>www</p>
+<p>ffffff</p>
+<p class="intro">intro</p>
+<p class="intro">intro</p>
+</div>
+<button id="btn1">first()选择div的第一个p元素</button>
+<br />
+<button id="btn2">last()选择div的最后一个p元素</button>
+<br />
+<button id="btn3">通过index标记选择</button>
+<br />
+<button id="btn4">通过filter筛选</button>
+<br />
+<button id="btn5">选取不是not的</button>
+</body>
+</html>

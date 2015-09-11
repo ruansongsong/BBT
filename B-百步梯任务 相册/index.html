@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content=" " charset="utf-8" http-equiv="content-type" />
+<link rel="stylesheet" type="text/javascript" href="js.js" />
+<script src="js/jquery.min.js"></script>
+<style>
+.container
+{
+		margin:0 auto;
+		width:600px;
+		height: 375px;
+}
+ul li
+{
+
+    position: absolute;;
+	width:600px;
+	height: 375px;
+	list-style-type:none
+
+
+}
+button
+{
+	position:relative;
+	top:50%;
+}
+.see
+{
+	display: block;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var i=2;
+		$("#next").click(function(){
+			if($("ul li").eq(i).is(":visible"))
+			{
+			$("ul li").eq(0).show();
+			$("ul li").eq(i).fadeOut();
+			//$("ul li").eq(i).style.display="none";
+			}
+			
+			i--;
+			if(i==-1)
+			{
+				i=2;
+				$("li:hidden").show();
+			};
+			/*
+			$("#last").click(function(){
+			if($("ul li").eq(i).is(":visible"))
+			{
+			$("ul li").eq(i).fadeOut();
+			}
+		else
+			{
+			$("ul li").eq(i).fadeIn();
+			}
+			i--;
+			if(i==0)
+			{
+				i=2;
+			};
+			*/
+		});
+	});
+	/*
+	 $((document).ready(function(){
+     var i = 2;
+   
+    	if(! $("ul li").eq(i).is(":hidden")){
+		$("#next").click(function(){
+    $("ul li").eq(i).fadeOut("slow")
+    }
+	else{
+    $("ul li").eq(i).fadeIn("slow")
+    }
+    i--;
+    if(i == 0){
+    i = 2;
+    };
+    };
+    });
+*/
+</script>
+</head>
+<body>
+<div   class="container">
+	<ul id="length">
+		<li><img  src="img/1.jpg" /></li>
+		<li><img  src="img/2.jpg" /></li>
+		<li><img  src="img/3.jpg" /></li>
+</ul>
+<button id="last" type="button">上一张</button>
+<button id="next" type="button">下一张</button>
+</div>
+</body>
+</html>

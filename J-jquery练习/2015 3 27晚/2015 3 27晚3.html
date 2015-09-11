@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#btn1").click(function() {
+			alert("Text:" + $("#test").text());
+		});
+	$("#btn2").click(function() {
+
+	});
+	$("#btn3").click(function() {
+			alert("Text:"+$("#test").html());
+		});
+	$("#btn4").click(function() {
+			alert($("#test2").val());
+	});
+});
+</script>
+</head>
+
+<body>
+
+<button id="btn1">返回所选元素的内容</button>
+<br />
+<button id="btn2">设置所选文本内容</button>
+<br />
+<button id="btn3">设置返回所选元素内容（包括HTML标记）</button>
+<br />
+<button id="btn4">返回表单字段的值</button>
+<br />
+<p id="test">这是<strong>加粗</strong>的字体</p>
+<p id="test1">测试修改内容</p>
+<input type="text" id="test2" value="阮松松"/>
+</body>
+</html>

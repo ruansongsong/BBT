@@ -1,0 +1,272 @@
+* {
+	margin: 0px; padding: 0px;
+}
+body 
+{
+	background-color:#DFDBD3; /*背景色*/
+}
+#line/*画横线导航栏中*/
+{
+ margin-top:10px;
+ width:175px;
+ height:1px;
+ background-color:#DFDBD3;
+}
+#line1/*画横线 头头1*/
+{
+ position:relative; left:26px; top:90px;
+ width:15px;
+ height:3px;
+ background-color:#DFDBD3;
+}
+#line2/*画横线 头头2*/
+{
+ position:relative; left:240px; top:-4px;
+ width:320px;
+ height:3px;
+ background-color:#DFDBD3;
+}
+#line3/*画横线 文章间隔线*/
+{
+ position:relative; left:25px;
+ width:535px;
+ height:1px;
+ background-color:#DFDBD3;
+}
+#h /*ZEN*/
+{
+position:relative; left:45px; top:68px;
+color:black;
+font-family:宋体;
+font-size:40px;
+}
+#h1/*GARDEN*/
+{
+position:relative; left:115px; top:23px;
+color:#B2CF42;
+font-family:宋体;
+font-size:40px;
+}
+#h2/*the beauty of*/
+{
+position:relative; left:48px; top:75px;
+color:#B2AC9F;
+font-family:宋体;
+font-size:10px;
+}
+
+#article_wrapper /*文章内容部分布局*/
+{
+position:relative; left:58px; top:0px;
+text-decoration:none; 
+background:#FFFFFF ; 
+height:130em; 
+width:550px; 
+margin: 0px;
+padding:2em; 
+box-shadow: 3px 3px 4px RGB(221,217,209); 
+text-align:left;
+float:top;
+}
+#p3/*zen...左边那个图片*/
+{
+position:relative; left:-48px; top:-50px;
+float:left;
+}
+#footer/*html...*/
+{
+color:#B2AC9F;
+font-family:宋体;
+font-size:15px;
+text-align:center;
+}
+#p4
+{
+position:absolute;left:-20px;top:0px;
+float:left;
+opacity:0.2;
+}
+#p5
+{
+position:absolute;left:-15px;top:-4px;
+float:left;
+opacity:0.7;
+}
+#nav /*设置右侧导航栏属性*/
+{
+
+
+position:relative; left:673px; top:-1980px;
+display:block;
+text-decoration:none; 
+background:#B2AC9F; 
+height:1000px; 
+width:246px; 
+margin: 0px;
+box-shadow: 5px 5px 7px RGB(199,195,187) ; 
+text-align:left;
+display:block;
+float:left;
+}
+.dash
+{ 
+border-bottom-width: 1px;
+border-bottom-style: dashed; 
+border-bottom-color: #0000;
+font-style: italic;
+}
+#title/*文章标题*/
+{
+position:relative; left:25px; top:10px;
+font-family:Calibri;
+font-size:15px;
+font-weight:bold;
+
+}
+#content   /*正文内容格式*/
+{
+padding:6px;
+position:relative; left:18px;
+margin-right:20px;
+font-family:Verdana;
+color:#4C4C4C;
+text-align:justify;
+font-size:13px;
+line-height:25px;
+}
+#image1/*绿色的标题框*/
+{
+
+text-decoration:none; 
+background:#B2CF42; 
+display:block;
+height:26px; 
+width:200px; 
+margin: 0px;
+position:relative; left:0; top:30px;
+}
+#image2 /*黑色的标题框1*/
+{
+box-shadow: 1px 2px 2px; 
+text-decoration:none; 
+background:#4C4C4C; 
+display:block;
+height:26px; 
+width:200px; 
+margin: 0px;
+position:relative; left:0; top:155px;
+}
+#image3/*黑色的标题框2*/
+{
+box-shadow: 1px 2px 2px; 
+text-decoration:none; 
+background:#4C4C4C; 
+display:block;
+height:26px; 
+width:200px; 
+margin: 0px;
+position:relative; left:0; top:540px;
+}
+#image4 /*黑色的标题框3*/
+{
+box-shadow: 1px 2px 2px; 
+text-decoration:none; 
+background:#4C4C4C; 
+display:block;
+height:26px; 
+width:200px; 
+margin: 0px;
+position:relative; left:0; top:630px;
+}
+#scr
+{
+
+text-align:center;
+}
+#nav ul a:link /*设置链接颜色*/
+{
+text-decoration:none; 
+color:#3F3F3F;
+text-decoration:none;
+
+}
+#nav ul a:hover /*鼠标经过颜色及背景颜色变化*/
+{
+background:#B2CF42;
+text-decoration:none; 
+color:#FFFFFF
+}
+#nav a.names:link /*类，定义作者链接颜色*/
+{
+text-decoration:none; 
+color:#FFFFFF;
+text-decoration:none;
+
+}
+#nav a.names:hover   /*类，定义鼠标经过作者的颜色变化*/
+{
+background:#B2CF42;
+text-decoration:none; 
+color:#FFFFFF
+}
+.links:link /*设置链接颜色*/
+{
+background:#EBF3CE;
+text-decoration:none; 
+color:#3F3F3F;
+text-decoration:none;
+
+}
+.links:hover /*鼠标经过颜色及背景颜色变化*/
+{
+background:#B2CF42;
+text-decoration:none; 
+color:#FFFFFF
+}
+.links  /*设置链接位置，字体大小*/
+{
+
+
+font-size:13px;
+
+}
+#link1  /*设置链接位置，字体大小*/
+{
+padding:2em; 
+font-family:Verdana;
+font-size:11px;
+left:200px;
+padding-top:23px;
+}
+#nav1  /*设置download属性*/
+{
+font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+
+position:relative; left:16px; top:5px;
+font-size:15px;
+color:white;
+}
+#link2
+{
+font-family:Verdana;
+font-size:12px;
+left:200px;
+padding-top:26px;
+color
+}
+#nav2
+{
+font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+
+
+
+position:relative; left:16px; top:6px;
+
+font-size:15px;
+color:white;
+}
+#footer
+{
+	clear:both;
+}
+

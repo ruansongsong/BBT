@@ -1,0 +1,41 @@
+.container
+{
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:5%;
+
+}
+.btn
+{
+	text-align:center;
+	margin-top:5%;
+}
+.header
+{
+	text-align:center;
+}
+.h
+{
+
+}
+.title
+{
+	
+	color:#1fda9a;
+	font-size:2em;
+	text-align:center;
+}
+img
+{
+	width:35%;
+	height:20%;
+	margin-top:-0.5em;
+	margin-bottom:-0.5em;
+}
+footer
+{
+	text-align:center;
+	color:#1fda9a;
+	margin-top:2em;
+	margin-bottom:2em;
+}

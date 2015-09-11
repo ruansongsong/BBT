@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content=" " charset="utf-8" http-equiv="content-type" />
+<link rel="stylesheet" type="text/javascript" href="js.js" />
+<script src="js/jquery.min.js"></script>
+<style>
+.container
+{
+		margin:0 auto;
+		width:600px;
+		height: 400px;
+}
+li
+{
+
+    position: absolute;;
+	list-style-type:none
+
+
+}
+.last
+{
+	margin-top:auto;
+	margin-bottom:auto;
+	float:left;
+	font-size:6em;
+	color:#FFF;
+	opacity:0.8;	
+	z-index: 20;
+}
+.next
+{
+	margin-top:auto;
+	margin-bottom:auto;
+	float:right;
+	font-size:6em;
+	color:#FFF;
+	opacity:0.8;	
+	z-index: 20;
+}
+.img
+{
+	width: 50px;
+	height:100px;
+	border: 2px #000 solid;
+}
+</style>
+<script type="text/javascript">
+	var i=3;
+	$(document).ready(function(){
+		$("#last").click(function(){
+				if(0<=i<=3)
+				{
+					$("ul li").eq(i).hide();
+					$("ul li").eq(i+1).show();
+					//alert(1);
+				}
+				i++;
+			if(i==4)
+			{
+				i=0;
+				$("li:visible").hide();
+				$("ul li").eq(0).show();
+			};
+				/*if(i==3)
+				{
+					i=-1;
+					$("li:visible").hide();
+				}
+				*/				
+			})
+	})
+	$(document).ready(function(){
+		$("#next").click(function(){
+		//	if($("ul li").eq(i).is(":visible"))
+		//	{
+			//$("ul li").eq(0).show();
+			if(0<=i<=3)
+			{
+			$("ul li").eq(i).hide();
+			$("ul li").eq(i-1).show();
+			}
+			//$("ul li").eq(i).style.display="none";
+			//}
+			
+			i--;
+			if(i==-1)
+			{
+				i=3;
+				$("li:hidden").show();
+			};
+			/*$("#last").click(function(){
+			//if($("ul li").eq(i).is(":visible"))
+			//{
+			$("ul li").eq(0).show();
+			$("ul li").eq(i).hide();
+			//$("ul li").eq(i).style.display="none";
+			//}
+			
+			i--;
+			if(i==-1)
+			{
+				i=2;
+				$("li:hidden").show();
+			};
+			*/
+
+			/*
+			$("#last").click(function(){
+			if($("ul li").eq(i).is(":visible"))
+			{
+			$("ul li").eq(i).fadeOut();
+			}
+		else
+			{
+			$("ul li").eq(i).fadeIn();
+			}
+			i--;
+			if(i==0)
+			{
+				i=2;
+			};
+			*/
+		});
+	});
+	/*
+	 $((document).ready(function(){
+     var i = 2;
+   
+    	if(! $("ul li").eq(i).is(":hidden")){
+		$("#next").click(function(){
+    $("ul li").eq(i).fadeOut("slow")
+    }
+	else{
+    $("ul li").eq(i).fadeIn("slow")
+    }
+    i--;
+    if(i == 0){
+    i = 2;
+    };
+    };
+    });
+*/
+</script>
+</head>
+<body>
+<div   class="container">
+	<ul>
+		<li><img  src="img/1.jpg" /></li>
+		<li><img  src="img/2.jpg" /></li>
+		<li><img  src="img/3.jpg" /></li>
+		<li><img  src="img/4.jpg" /></li>
+</ul>
+
+<div id="last" class="last">《</div>
+<div id="next" class="next">》</div>
+</div>
+<div class="banner">
+		<ul>
+		<li><img class="img" src="img/1.jpg" /></li>
+		<li><img class="img" src="img/2.jpg" /></li>
+		<li><img class="img" src="img/3.jpg" /></li>
+		<li><img class="img" src="img/4.jpg" /></li>
+</ul>
+</div>
+</body>
+</html>

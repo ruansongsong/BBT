@@ -1,0 +1,271 @@
+body {
+  height: 100%;
+  font-family: "Microsoft YaHei";
+  background-color: #b5b5b5; }
+
+p {
+  font-family: "Microsoft YaHei"; }
+
+#container {
+  width: 1440px;
+  margin: -20px auto 0 auto; }
+
+#change {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none; }
+
+.bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 8;
+	background-color: grey;
+	opacity: 0.7; }
+	
+#change .head {
+	width:900px;
+	z-index:10;
+	position: relative;
+	margin: 5% 20%; }
+
+#change .detail {
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  z-index: 10;
+  margin: -5% 20%; }
+
+#change .table table {
+	position: relative;
+	top: 0px;
+	left: -20px;
+	z-index: 10; }
+
+#change .alter {
+  width: 50px;
+  position: relative;
+  top: 130px;
+  left: 750px; }
+  
+.close {
+  width: 50px;
+  position: relative;
+  top: 110px;
+  left: 800px;
+  color:#46b1e0;
+  cursor: pointer; }
+
+.close:hover {
+  color: #b1e4fa; }
+
+#nav {
+  float: left;
+  width: 250px;
+  height: 710px;
+  text-align: center;
+  background-color: #424242; }
+
+#nav ul{
+  margin: 30px 0 0 -40px;
+  color: white; 
+  list-style-type: none; }
+	
+#nav li{
+  height: 60px;
+  font-family: "Microsoft YaHei";
+  margin: 10px 0 0 0;
+  line-height: 60px; }
+
+#img {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  border-radius: 90px; }
+
+#content {
+  float: left;
+  width: 1190px;
+  height: 700px; }
+
+#name {
+  height: 50px;
+  margin-top: 70px;
+  text-align: center; }
+
+#personalimformation, #activity, #imformationmanage {
+  height: 50px;
+  text-align: center;
+  cursor: pointer; }
+
+.navs p {
+  position: relative;
+  top: 15px;
+  color: white; }
+
+#nav #personalimformation {
+  background-color: grey;
+  border-left: 3px solid;
+  border-left-color:#0ca9f3; }
+
+#nav #activity:hover {
+  background-color: grey; }
+
+#nav #imformationmanage:hover {
+  background-color: grey; }
+
+.head {
+  position: relative;
+  z-index: 1;
+  height: 100px;
+  margin-top: -20px;
+  background-color: #2497f1;
+  box-shadow: 2px 2px 20px 2px grey; }
+
+.head span {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  font-size: 25px;
+  color: white; }
+
+.detail {
+  width: 1140px;
+  height: 600px;
+  margin-left: 20px;
+  background-color: white; }
+ 
+.up {
+	font-size: 24px;
+	position: relative;
+	top: -10px;
+	left: -745px; }
+
+.detail span {
+  margin: 10px 30px 0 30px; }
+
+.contactway {
+  width: 1000px;
+  float: left;
+  margin: 50px 0 0 100px; }
+
+.phonenumber .summary {
+  display: block; }
+
+.phonenumber .details {
+  display: block; }
+  
+.shortnumber .summary {
+  display: block; }
+  
+.shortnumber .details {
+  display: block; }
+
+.email .summary {
+  display: block; }
+  
+.email .details {
+  display: block; }
+
+.qqnumber .summary {
+  display: block; }
+ 
+.qqnumber .details {
+  display: block; }
+
+.blog .summary {
+  display: block; }
+
+.blog .details {
+  display: block; }
+
+.phonenumber,.shortnumber,.email,.qqnumber,.blog {
+	position: relative;
+	top: 30px;
+	float: left; }
+	
+.down {
+	font-size: 24px;
+	position: relative;
+	top: 80px;
+	left: 100px; }
+	
+.details {
+  color: #8d8d8d; }
+
+.alter {
+  position: relative;
+  top: 500px;
+  color:#46b1e0;
+  cursor: pointer; }
+
+.alter:hover {
+  color: #b1e4fa; }
+
+.tbdetail {
+	text-align: center;
+	border: 0;
+	background-color: white;
+	margin: -100px 70px;
+	width: 800px; }
+	
+.tbhead {	
+	margin: 100px 70px;
+	width: 800px;
+	text-align: center;
+	color: black;
+	background-color: white; }
+
+.space {
+	border: 1px;
+	border-style: solid;
+	border-color: #8d8d8d;
+	border-right-style: none;
+	width: 106px; }
+
+.mon,.tues,.wed,.thurs,.fri,.sat {
+	width: 100px;
+	border: 1px;
+	border-style: solid;
+	border-color: #8d8d8d;
+	border-right-style: none; }
+
+.sun {
+	width: 100px;
+	border: 1px;
+	border-style: solid;
+	border-color: #8d8d8d; }
+
+.tbdetail td {
+	width: 90px;
+	border: 1px;
+	border-style: solid;
+	border-color: #8d8d8d;
+	border-right-style: none; }
+
+.course {
+	width: 90px; }
+
+.tbdetail .lastcol {
+	border: 1px;
+	border-style: solid;
+	border-color: #8d8d8d; }
+
+.table {
+	margin: 0 0 0 55px; }
+
+.alter {
+	width: 50px;
+	position: relative;
+	top: -210px;
+	left: 800px;
+	color:#46b1e0;
+	cursor: pointer; }
+
+.alter:hover {
+	color: #b1e4fa; }
+
+/*# sourceMappingURL=style.css.map */
+

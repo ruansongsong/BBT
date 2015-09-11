@@ -1,0 +1,38 @@
+<!--实现移动且改变字体 使用队列功能-->
+<DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+        $(".button1").click(function() {
+			var boxAnimate=$(".box")
+				boxAnimate.animate({
+					left:'350px'},"slow"
+					);
+				boxAnimate.animate({
+					fontSize:'50px'},"slow"  //注意使用fontSize
+					);
+				
+			});
+    });
+</script>
+<style type="text/css">
+	div.box
+	{
+		width:200px;
+		height:200px;
+		background:#060;
+		color:#FFF;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size:40px;
+		position:absolute;
+	}
+</style>
+</head>
+<body>
+	<button class="button1">点击实现动画</button> 
+	<div class="box">jQuery<div>
+</body>
+</html>

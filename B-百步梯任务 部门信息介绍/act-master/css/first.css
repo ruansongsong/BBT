@@ -1,0 +1,187 @@
+body {
+  height: 100%;
+  font-family: "Microsoft YaHei";
+  background-color: #b5b5b5; }
+
+p {
+  font-family: "Microsoft YaHei"; }
+
+#container {
+  width: 1440px;
+  height:1575px;;
+  margin: -20px auto 0 auto; }
+
+#change {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none; }
+
+.bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 8;
+	background-color: grey;
+	opacity: 0.7; }
+	
+#change .head {
+	width:900px;
+	z-index:10;
+	position: relative;
+	margin: 5% 20%; }
+
+#change .detail {
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  z-index: 10;
+  margin: -5% 20%; }
+
+#change .table table {
+	position: relative;
+	top: 0px;
+	left: -20px;
+	z-index: 10; }
+
+#change .alter {
+  width: 50px;
+  position: relative;
+  top: 130px;
+  left: 750px; }
+  
+.close {
+  width: 50px;
+  position: relative;
+  top: 110px;
+  left: 800px;
+  color:#46b1e0;
+  cursor: pointer; }
+
+.close:hover {
+  color: #b1e4fa; }
+
+#nav {
+  float: left;
+  width: 250px;
+ height:100%;
+  text-align: center;
+  background-color: #424242; }
+
+#nav ul{
+  margin: 30px 0 0 -40px;
+  color: white;
+  list-style:none; }
+	
+#nav li{
+  height: 60px;
+  font-family: "Microsoft YaHei";
+  margin: 10px 0 0 0;
+  line-height: 60px; }
+
+#img {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  border-radius: 90px; }
+
+#content {
+  float: left;
+  width: 1190px;
+  height:100%;
+}
+
+#name {
+  height: 50px;
+  margin-top: 70px;
+  text-align: center; }
+
+#personalimformation, #activity, #imformationmanage ,#departmentIntro{
+  height: 50px;
+  text-align: center;
+  cursor: pointer; }
+#personalimformation
+{
+	background:url(../listicon/personalimformation.png) no-repeat 28%
+}
+#activity
+{
+	background:url(../listicon/activity.png) no-repeat 28%
+}
+#departmentIntro
+{
+	background:url(../listicon/departmentIntro.png) no-repeat 28%
+}
+.navs p {
+  position: relative;
+  top: 15px;
+  color: white; }
+/*
+#nav #personalimformation {
+  background-color: grey;
+  border-left: 3px solid;
+  border-left-color:#0ca9f3; }
+ */
+#nav #departmentIntro {
+  background-color: grey;
+  border-left: 3px solid;
+  border-left-color:#0ca9f3; }
+#nav #activity:hover {
+  background-color: grey;
+  }
+#nav #personalimformation:hover{
+	background-color:grey;}
+#nav #imformationmanage:hover {
+  background-color: grey; }
+#nav #departmentIntro:hover {
+	background-color:grey;}
+.head {
+  position: relative;
+  z-index: 1;
+  height: 100px;
+  margin-top: -20px;
+  background-color: #2497f1;
+  box-shadow: 2px 2px 20px 2px grey; }
+
+.head span {
+  position: relative;
+  top: 30px;
+  left: 100px;
+  font-size: 25px;
+  color: white; }
+.head span .p1
+{
+	margin-top:-25px;
+	font-size:13px;
+}
+
+.detail {
+	padding-top:30px;
+	height:1440px;
+  width: 1190px;/**/
+  margin-left: 0px;/**/
+  background-color: white; }
+ /****/
+.departmentDetails
+{
+	position:relative;
+	width:80%;
+	left:100px;
+}
+.departmentList
+{
+	margin-bottom:30px;
+}
+.departmentDetails .title
+{	font-size:18px;
+	color:#8ac1da;
+ 	text-shadow:0.5px 0.5px 0.5px #DDDBDB;
+}
+.departmentDetails p
+{
+	font-size:16px;
+	text-align:justify;
+}
+/*# sourceMappingURL=style.css.map */
+

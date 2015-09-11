@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+	function appendText()
+	{
+		var text1="<p>以HTML创建新元素</p>";  //以HTML创建新元素
+		var text2=$("<p></p>").text("以jQuery创建新元素");
+		var text3=document.createElement("p");
+		text3.innerHTML="通过DOM来创建文本";
+		$("body").append(text1,text2,text3)   //追加新元素
+	};
+$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("#p1").append(",but you dont't love me");	
+		});
+		$("#btn2").click(function() {
+			$("#ol1").append("<li>love the way you lie</li>");
+		})
+	});
+</script>
+</head>
+
+<body>
+	<p>this is  a paragraph</p>
+    <button onClick="appendText()">追加文本</button><!-- //注意函数后不要忘了()-->
+	<br />
+    <button id="btn1">追加元素</button>
+    <button id="btn2">追加列表项</button>
+    <br />
+    <p id="p1">I love you</p>
+    <ol id="ol1">
+        <li>Google</li>
+        <li>Baidu</li>
+        <li>Bing</li>
+        <li>Bing</li>
+     </ol>
+</body>
+
+</html>

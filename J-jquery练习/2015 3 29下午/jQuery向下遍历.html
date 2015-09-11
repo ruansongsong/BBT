@@ -1,0 +1,70 @@
+<!--
+
+向下遍历 DOM 树
+
+下面是两个用于向下遍历 DOM 树的 jQuery 方法：
+
+    children()
+    find()
+
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+        $("#btn1").click(function() {
+			$(".box").children().css({
+				"color":"red",
+				"border":"2px solid red",
+			});//下一个的子代
+			
+		});
+		  $("#btn2").click(function() {
+			$(".box").children("ul.u").css({
+				"color":"red",
+				"border":"2px solid red",
+			});//两者之间查找子代
+			
+		});
+		 $("#btn3").click(function() {
+			$(".box").find("span").css({
+				"color":"red",
+				"border":"2px solid red",
+			});//查找子代
+			
+		});
+    });
+</script>
+<style>
+	.box *
+	{
+		margin:10px;
+		padding:1px;
+		display:block;
+		color:lightgray;
+		border:2px solid lightgray;
+		
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div style="width:500px;">曾祖父
+	<ul class="u">祖父
+    	<li class="s2">直接父
+        <span class="s1">span</span>
+        </li>  
+    </ul>
+    </div>
+</div>
+<br />
+<button id="btn1">子代</button>
+<button id="btn2">两者之间查找子代</button>
+<button id="btn3">查找特定的子代</button>
+</body>
+</html>

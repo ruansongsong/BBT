@@ -1,0 +1,73 @@
+<!--
+
+同胞拥有相同的父元素。
+
+通过 jQuery，您能够在 DOM 树中遍历元素的同胞元素。
+在 DOM 树中水平遍历
+
+有许多有用的方法让我们在 DOM 树进行水平遍历：
+
+    siblings()
+    next()
+    nextAll()
+    nextUntil()
+    prev()
+    prevAll()
+    prevUntil()
+	都是类似用法
+jQuery prev(), prevAll() & prevUntil() 方法
+
+prev(), prevAll() 以及 prevUntil() 方法的工作方式与上面的方法类似，只不过方向相反而已：它们返回的是前面的同胞元素（在 DOM 树中沿着同胞元素向后遍历，而不是向前）。
+
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+        $("#btn1").click(function() {
+			$("h2").siblings().css({
+				"color":"red",
+				"border":"2px solid red",
+				})
+		});
+        $("#btn2").click(function() {
+			$("h2").siblings("p").css({
+				"color":"red",
+				"border":"2px solid red",
+				})
+		});
+    });
+</script>
+<style type="text/css">
+	.box *
+	{
+		margin:10px;
+		padding:1px;
+		display:block;
+		border:2px solid lightgray;
+
+	}
+</style>
+</head>
+
+<body>
+	<div class="box">
+    <div>父
+         <p>pp</p>
+		<h1>h1h1</h1>
+        <h2>h2h2</h2>
+        <p>pp</p>
+        <span>ss</span>
+        <p>pp</p>
+         
+    </div>
+    </div>
+ <button id="btn1">返回h2的所有同级元素</button>
+ <br />
+ <button id="btn2">返回h2同级的p的所有元素</button>
+</body>
+</html>

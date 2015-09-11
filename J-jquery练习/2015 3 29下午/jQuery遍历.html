@@ -1,0 +1,70 @@
+<!--
+向上遍历 DOM 树
+
+这些 jQuery 方法很有用，它们用于向上遍历 DOM 树：
+
+    parent()
+    parents()
+    parentsUntil()
+
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+<script>
+//向上遍历树
+	$(document).ready(function() {
+        $("#btn1").click(function() {
+			$("span").parent().css({
+				"color":"red",
+				"border":"2px solid red",
+			});
+			
+		});
+		  $("#btn2").click(function() {
+			$("span").parents().css({
+				"color":"red",
+				"border":"2px solid red",
+			});//所有的父
+			
+		});
+		 $("#btn3").click(function() {
+			$("span").parentsUntil("ul").css({
+				"color":"red",
+				"border":"2px solid red",
+			});//在两个父之间查找
+			
+		});
+    });
+</script>
+<style>
+	.box *
+	{
+		margin:10px;
+		padding:1px;
+		display:block;
+		color:lightgray;
+		border:2px solid lightgray;
+		
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div style="width:500px;">曾祖父
+	<ul>祖父
+    	<li>直接父
+        <span>span</span>
+        </li>  
+    </ul>
+    </div>
+</div>
+<br />
+<button id="btn1">直接父</button>
+<button id="btn2">所有的父</button>
+<button id="btn3">两者之间查找</button>
+</body>
+</html>

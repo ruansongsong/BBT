@@ -1,0 +1,66 @@
+<!--jQuery 操作 CSS
+jQuery 拥有若干进行 CSS 操作的方法。我们将学习下面这些：
+addClass() - 向被选元素添加一个或多个类
+removeClass() - 从被选元素删除一个或多个类
+toggleClass() - 对被选元素进行添加/删除类的切换操作
+css() - 设置或返回样式属性-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("#div1").addClass("anothercss");
+		});
+		$("#btn2").click(function() {
+			$("#div1").removeClass("anothercss");
+		});
+		$("#btn3").click(function() {
+			$("#div1").toggleClass("anothercss");
+		});
+		$("#btn4").click(function() {
+			alert("返回的css内容" + $("#div1").css("background-color"));
+		});
+		$("#btn5").click(function() {
+			$("#div1").width(300).height(300);//改变长款
+			$("#div1").css({
+				"background-color":"lightblue",
+				});
+			var txt="";
+			txt="1<br />1";
+			alert("修改后的长宽："+ $("#div1").width() + " " +$("#div1").height());
+			$("#div").html(txt);
+		});
+	});
+</script>
+<style type="text/css">
+	#div1
+	{
+		width:100px;
+		height:100px;
+		font-size:16px;
+		background-color:#0C0;
+	}
+	.anothercss
+	{
+		border:1px solid #999;
+		font-size:36px;
+		color: #FFF;
+	}
+</style>
+
+</head>
+
+<body>
+<div id="div1">jQuery</div>
+<button id="btn1">改变css</button>
+<button id="btn2">移除css</button>
+<button id="btn3">改变和移除切换</button>
+<br />
+<button id="btn4">返回css的内容</button>
+<br />
+<button id="btn5">修改css背景颜色</button>
+</body>
+</html>

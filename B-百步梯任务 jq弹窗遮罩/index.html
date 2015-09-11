@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script src="js/jquery.min.js"></script>
+<script src="js/js.js"></script>
+<style>
+
+.mask
+{
+    position: absolute;
+    top: 0;
+    left:0;
+    background:#000;
+    opacity: 0.2;
+    z-index: 1;
+}
+.button
+{
+    margin:0 auto;
+    width:120px;
+    height:50px;
+    font-size:2em;
+    text-align: center;
+    line-height: 1.5em;
+    color:#fff;
+    background: #99cc32;
+    cursor:pointer;
+    z-index: 2;
+}
+.content
+{
+	position:absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+    background: #99cc32;
+    z-index: 2;
+}
+.close
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:50px;
+    height: 25px;
+    background: red;
+    color:#fff;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+    <div class="mask"></div>
+        <div class="button">点我</div>
+        <div class="content">
+            <div class="close">关闭
+            </div>
+        </div>
+</body>
+</html>

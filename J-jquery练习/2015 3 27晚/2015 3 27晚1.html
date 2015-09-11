@@ -1,0 +1,45 @@
+<DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script src="file:///C|/Users/Administrator/Documents/未命名站点 2/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#flip").click(function(){
+			$("#box").slideToggle(3000,function(){
+				$("#box").animate({
+					  fontSize:'30px',
+					},"slow");
+			});
+		});
+       $(".button1").click(function(){
+		   $("#box").stop();//停止动画
+	   });
+    });
+</script>
+<style type="text/css">
+	#box,#flip
+	{
+
+		margin:2px;
+		padding:1px;
+		width:400px;
+		background-color: #3C9;
+		text-align:center;
+		border:1px solid #999;
+	}
+	#box
+	{
+
+		height:200px;
+		
+	}
+</style>
+</head>
+<body>
+<button class="button1">停止动画</button>
+<div id="flip">点击这里，向上/向下滑动面板</div>
+<div id="box">一寸光阴一寸金，因此，我们为您提供快捷易懂的学习内容。</div>
+
+</body>
+</html>
